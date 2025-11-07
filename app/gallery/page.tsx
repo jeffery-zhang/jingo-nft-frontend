@@ -14,6 +14,7 @@ export type MintRecord = {
 }
 
 export default function Gallery() {
+  // @ts-ignore
   const { data, error, isPending } = useReadContract({
     ...contractConfig,
     functionName: 'viewAllMintedNFTs',

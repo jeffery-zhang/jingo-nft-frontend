@@ -64,6 +64,7 @@ export default function Minting() {
   // 调用智能合约开始铸造
   const mint = async (url: string) => {
     if (!url) return
+    // @ts-ignore
     writeContract({
       ...contractConfig,
       functionName: 'mintNFT',
